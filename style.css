@@ -1,0 +1,174 @@
+/* Fontes e cores */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #121212;
+    color: #EAEAEA;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 48px;
+    color: #00ADB5;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+a {
+    color: #00ADB5;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #FF2E63;
+}
+
+/* Header */
+.header {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+}
+
+.nav-links li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: #EAEAEA;
+    font-weight: 600;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+    color: #00ADB5;
+}
+
+/* Seção Sobre */
+.sobre-section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.sobre-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    font-size: 20px;
+}
+
+.sobre-content img {
+    border-radius: 10%;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+#img1{
+        border-radius: 50%;
+        width: 100%; /* Ajusta a largura ao contêiner */
+        height: 150px; /* Mantém a proporção */
+        object-fit: contain; /* Evita corte da imagem */
+    
+    
+}
+/* Seção Projetos */
+.projetos-section {
+    padding: 60px 20px;
+    background-color: #1f1f1f;
+}
+
+.projetos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.projeto-card {
+    background-color: #333;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.projeto-card img {
+    width: 100%;
+    border-radius: 10px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.projeto-card h3 {
+    color: #00ADB5;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #FF2E63;
+    color: #fff;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background-color: #00ADB5;
+}
+
+.tecnologia-section {
+    padding: 60px 20px;
+    background-color: #121212;
+}
+
+.tecnologia-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.tecnologia-card {
+    background-color: #333;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.tecnologia-card img {
+    width: 100%;
+    border-radius: 10px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 1px;
+}
+
+.tecnologia-card h3 {
+    color: #00ADB5;
+}
+
+/* Seção Contato */
+.contato-section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+    color: #EAEAEA;
+}
