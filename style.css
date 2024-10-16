@@ -173,9 +173,9 @@ strong{
 }
 i{
     color:darkorange
-    
+
 }
-@media screen and (max-width:1020px) {
+@media screen and (max-width:1200px){
     .sobre-content{
         flex-direction:column;
     }
