@@ -213,4 +213,11 @@ i{
     .sobre-content{
         flex-direction:column;
     }
+    .certific-section{
+        flex-direction: column;
+        img{
+            height: 300px;
+            width: auto;
+        }
+    }
 }
