@@ -76,14 +76,7 @@ a:hover {
     height: 300px;
     object-fit: cover;
 }
-#img1{
-        border-radius: 50%;
-        width: 100%; /* Ajusta a largura ao contêiner */
-        height: 150px; /* Mantém a proporção */
-        object-fit: contain; /* Evita corte da imagem */
-    
-    
-}
+
 /* Seção Projetos */
 .projetos-section {
     padding: 60px 20px;
@@ -171,4 +164,19 @@ a:hover {
     padding: 20px;
     text-align: center;
     color: #EAEAEA;
+}
+b{
+    color: #00ADB5;
+}
+strong{
+    color:darkgoldenrod
+}
+i{
+    color:darkorange
+    
+}
+@media screen and (max-width:1020px) {
+    .sobre-content{
+        flex-direction:column;
+    }
 }
