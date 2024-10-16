@@ -215,9 +215,17 @@ i{
     }
     .certific-section{
         flex-direction: column;
-        img{
+        /* img{
             height: 300px;
             width: auto;
+            padding:20px;
+        } */
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
         }
+        
     }
 }
