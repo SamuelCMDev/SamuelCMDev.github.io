@@ -1,174 +1,223 @@
-:root {
-    --cor-fundo: #121212;
-    --cor-texto: #EAEAEA;
-    --cor-destaque: #00ADB5;
-    --cor-botao: #FF2E63;
-    --cor-borda: #333;
-}
-
-[data-tema="claro"] {
-    --cor-fundo: #EAEAEA;
-    --cor-texto: #121212;
-    --cor-destaque: #FF2E63;
-    --cor-botao: #00ADB5;
-    --cor-borda: #ddd;
-}
-
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: var(--cor-fundo);
-    color: var(--cor-texto);
+    background-color: #121212;
+    color: #EAEAEA;
     margin: 0;
     padding: 0;
-    transition: background-color 0.3s, color 0.3s;
 }
 
-h1, h2, h3 {
-    color: var(--cor-destaque);
+h1, h2 {
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 48px;
+    color: #00ADB5;
+}
+
+h2 {
+    font-size: 32px;
 }
 
 a {
-    color: var(--cor-destaque);
+    color: #00ADB5;
     text-decoration: none;
-    transition: color 0.3s;
 }
 
 a:hover {
-    color: var(--cor-botao);
-}
-
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
+    color: #FF2E63;
 }
 
 .header {
-    background-color: var(--cor-borda);
-    padding: 20px 0;
+    background-color: #333;
+    padding: 20px;
     text-align: center;
 }
 
 .nav-links {
     list-style: none;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
 }
 
 .nav-links li {
     display: inline;
+    margin: 0 15px;
 }
 
-#tema-toggle {
-    background: none;
-    border: none;
-    color: var(--cor-texto);
-    cursor: pointer;
-    font-size: 1.2rem;
+.nav-links a {
+    color: #EAEAEA;
+    font-weight: 600;
+    transition: color 0.3s ease-in-out;
 }
 
-.sobre-section, .projetos-section, .tecnologia-section, .certific-section, .contato-section {
-    padding: 60px 0;
+.nav-links a:hover {
+    color: #00ADB5;
+}
+
+.sobre-section {
+    padding: 60px 20px;
+    text-align: center;
 }
 
 .sobre-content {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 30px;
+    font-size: 20px;
 }
 
-.foto-perfil {
+.sobre-content img {
     border-radius: 10%;
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     object-fit: cover;
 }
 
-.projetos-grid, .tecnologia-grid, .certific-grid {
+.projetos-section {
+    padding: 60px 20px;
+    background-color: #1f1f1f;
+}
+
+.projetos-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
 }
 
-.projeto-card, .tecnologia-card, .certific-card {
-    background-color: var(--cor-borda);
+.projeto-card {
+    background-color: #333;
     border-radius: 10px;
     padding: 20px;
     text-align: center;
-    transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.projeto-card:hover, .tecnologia-card:hover, .certific-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-}
-
-.projeto-card img, .certific-card img {
+.projeto-card img {
     width: 100%;
     border-radius: 10px;
-    height: 150px;
+    height: 200px;
     object-fit: cover;
+    margin-bottom: 15px;
 }
 
-.tecnologia-card i {
-    font-size: 3rem;
-    margin-bottom: 10px;
+.projeto-card h3 {
+    color: #00ADB5;
 }
 
 .btn {
     display: inline-block;
     padding: 10px 20px;
     border-radius: 5px;
-    background-color: var(--cor-botao);
+    background-color: #FF2E63;
     color: #fff;
     font-weight: 600;
-    transition: background-color 0.3s;
+    margin-top: 10px;
 }
 
 .btn:hover {
-    background-color: var(--cor-destaque);
+    background-color: #00ADB5;
 }
 
-.social-links {
-    display: flex;
-    justify-content: center;
+.tecnologia-section {
+    padding: 60px 20px;
+    background-color: #121212;
+}
+
+.tecnologia-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
-    margin-top: 20px;
 }
 
-.social-links a {
-    font-size: 1.5rem;
+.tecnologia-card {
+    background-color: #333;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
 }
 
-#btn-topo {
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    padding: 10px 15px;
-    background-color: var(--cor-destaque);
-    color: #fff;
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
-    font-size: 18px;
-    transition: background-color 0.3s;
+.tecnologia-card img {
+    width: 100%;
+    border-radius: 10px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 1px;
 }
 
-#btn-topo:hover {
-    background-color: var(--cor-botao);
+.tecnologia-card h3 {
+    color: #00ADB5;
 }
 
-@media screen and (max-width: 768px) {
+#certific{
+    text-align: center;
+}
+.certific-section {
+    padding: 60px 20px;
+    background-color: #121212;
+}
+
+.certific-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.certific-card {
+    background-color: #121212;
+    border-radius: 10px;
+    padding: 2px;
+    text-align: center;
+}
+
+.certific-card h3 {
+    color: #00ADB5;
+}
+
+
+
+.contato-section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+
+.footer {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+    color: #EAEAEA;
+}
+b{
+    color: #00ADB5;
+}
+strong{
+    color:darkgoldenrod
+}
+i{
+    color:darkorange
+
+ }
+@media screen and (max-width: 1200px) {
     .sobre-content {
         flex-direction: column;
-        text-align: center;
     }
 
-    .nav-links {
+    .certific-section {
         flex-direction: column;
-        gap: 10px;
     }
+
+    .certific-card img {
+        max-width: 200px; 
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+
+.certific-card img {
+    max-width: 100%; 
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
