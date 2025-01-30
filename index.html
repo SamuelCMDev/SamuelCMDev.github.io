@@ -3,12 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio de Samuel Costa, programador Python e desenvolvedor web com experiência em IA, machine learning e desenvolvimento de sistemas.">
+    <meta name="keywords" content="Samuel Costa, programador Python, desenvolvedor web, IA, machine learning, YOLOv8, OpenCV, C#, HTML, CSS">
+    <meta name="author" content="Samuel Costa">
     <title>Samuel Costa | Portfólio</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-
+<body data-tema="escuro">
     <header class="header">
         <div class="container">
             <h1 class="main-title">Samuel Costa</h1>
@@ -18,122 +21,126 @@
                     <li><a href="#sobre">Sobre</a></li>
                     <li><a href="#projetos">Projetos</a></li>
                     <li><a href="#tecnologia">Tecnologias</a></li>
+                    <li><a href="#certific">Certificações</a></li>
                     <li><a href="#contato">Contato</a></li>
                 </ul>
             </nav>
+            <button id="tema-toggle"><i class="fas fa-moon"></i></button>
         </div>
     </header>
 
-    <section id="sobre" class="sobre-section">
-        <div class="container">
-            <h2>Sobre mim</h2>
-            <div class="sobre-content">
-                <img src="assets/eu.jpeg" alt="Minha Foto" style="max-width: 100%; height: auto;">
-                <p>Olá! Me chamo <b>Samuel Costa</b>, eu sou um programador apaixonado por tecnologia e inovação, atualmente cursando o ensino médio. Tenho experiência com <strong>Python</strong>, <strong>HTML</strong> e um pouco de <strong>CSS</strong>, mais abaixo tem algumas tecnologias nas quais já pratiquei e me saí muito bem, e estou sempre em busca de novos desafios que me permitam aplicar minhas habilidades e aprender mais. Já participei de competições como a <i>Olimpíada Brasileira de Robótica (OBR)</i>, onde conquistei medalhas, e venho desenvolvendo projetos voltados para inteligência artificial e aprendizado de máquina.<br>
-                    <br>
-                    Um dos meus projetos mais recentes envolve a criação de um sistema de monitoramento para detecção de agressões, utilizando aprendizado de máquina. Tenho interesse em explorar mais o mundo do desenvolvimento web, IA, e também estou curioso para expandir meu conhecimento em hardware.<br>
-                    <br>
-                    Sou dedicado, gosto de resolver problemas complexos e estou constantemente buscando maneiras de melhorar minhas habilidades e contribuir com soluções.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="projetos" class="projetos-section">
-        <div class="container">
-            <h2>Meus Projetos</h2>
-            <div class="projetos-grid">
-                <div class="projeto-card">
-                    <img src="assets/deteccao_de_violencia.png" alt="Detecção de violência com YOLOv8" style="max-width: 100%; height: auto;">
-                    <h3>Detecção de violência com YOLOv8</h3>
-                    <p>Projeto que usa machine learning para identificar situações de violência em vídeos e imagens. Feito com Python e o YOLOv8, onde treinei o modelo para que ele pudesse aprender a identificar agressões.</p>
-                </div>
-                <div class="projeto-card">
-                    <img src="assets/download.jpeg" alt="Freela para clínica veterinária" style="max-width: 100%; height: auto;">
-                    <h3>Freela para clínica veterinária</h3>
-                    <p>Simulação de um site para uma clínica veterinária com HTML e CSS.</p>
-                    <a href="https://github.com/SamuelCMDev/SiteHtmlVeterinario.git" class="btn">Ver mais</a>
-                </div>
-                <div class="projeto-card">
-                    <img src="assets/sistemaHospedagem.webp" alt="Sistema de hospedagem" style="max-width: 100%; height: auto;">
-                    <h3>Sistema de hospedagem</h3>
-                    <p>Um programa para um hotel com um sistema de hospedagem, usando C# e .NET.</p>
-                    <a href="https://github.com/SamuelCMDev/trilha-net-explorando-desafio.git" class="btn">Ver mais</a>
+    <main>
+        <section id="sobre" class="sobre-section">
+            <div class="container">
+                <h2>Sobre mim</h2>
+                <div class="sobre-content">
+                    <img src="assets/eu.jpeg" alt="Minha Foto" class="foto-perfil">
+                    <p>
+                        Olá! Me chamo <b>Samuel Costa</b>, sou um programador apaixonado por tecnologia e inovação, atualmente cursando o ensino médio. Tenho experiência com <strong>Python</strong>, <strong>HTML</strong>, <strong>CSS</strong> e outras tecnologias listadas abaixo. Participei de competições como a <i>Olimpíada Brasileira de Robótica (OBR)</i>, onde conquistei medalhas, e desenvolvi projetos como um sistema de monitoramento para detecção de agressões usando <strong>YOLOv8</strong> e <strong>OpenCV</strong>.<br><br>
+                        Sou dedicado, gosto de resolver problemas complexos e estou sempre buscando aprender mais e contribuir com soluções inovadoras.
+                    </p>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="tecnologia" class="tecnologia-section">
-        <div class="container">
-            <h2>Tecnologias</h2>
-            <div class="tecnologia-grid">
-                <div class="tecnologia-card">
-                    <img src="assets/python.jpeg" alt="Python" style="max-width: 100%; height: auto;">
-                    <h3>PYTHON</h3>
-                </div>
-                <div class="tecnologia-card">
-                    <img src="assets/htmlecss.jpeg" alt="HTML e CSS" style="max-width: 100%; height: auto;">
-                    <h3>HTML & CSS</h3>
-                </div>
-                <div class="tecnologia-card">
-                    <img src="assets/gitegithub.png" alt="Git e GitHub" style="max-width: 100%; height: auto;">
-                    <h3>GIT & GITHUB</h3>
-                </div>
-                <div class="tecnologia-card">
-                    <img src="assets/opencv.png" alt="OpenCV" style="max-width: 100%; height: auto;">
-                    <h3>OPENCV</h3>
-                </div>
-                <div class="tecnologia-card">
-                    <img src="assets/yolo.jpeg" alt="YOLOv8" style="max-width: 100%; height: auto;">
-                    <h3>YOLOv8</h3>
-                </div>
-                <div class="tecnologia-card">
-                    <img src="assets/c.png" alt="C#" style="max-width: 100%; height: auto;">
-                    <h3>C#</h3>
-                </div>
-                <div class="tecnologia-card">
-                    <img src="assets/js.png" alt="JavaScript" style="max-width: 100%; height: auto;">
-                    <h3>JavaScript</h3>
-                </div>
-                <div class="tecnologia-card">
-                    <img src="assets/selenium.png" alt="Selenium" style="max-width: 100%; height: auto;">
-                    <h3>Selenium</h3>
+        <section id="projetos" class="projetos-section">
+            <div class="container">
+                <h2>Meus Projetos</h2>
+                <div class="projetos-grid">
+                    <div class="projeto-card">
+                        <img src="assets/deteccao_de_violencia.png" alt="Detecção de violência com YOLOv8">
+                        <h3>Detecção de violência com YOLOv8</h3>
+                        <p>Projeto que usa machine learning para identificar situações de violência em vídeos e imagens.</p>
+                        <a href="#" class="btn">Ver mais</a>
+                    </div>
+                    <div class="projeto-card">
+                        <img src="assets/download.jpeg" alt="Freela para clínica veterinária">
+                        <h3>Freela para clínica veterinária</h3>
+                        <p>Simulação de um site para uma clínica veterinária com HTML e CSS.</p>
+                        <a href="https://github.com/SamuelCMDev/SiteHtmlVeterinario.git" class="btn">Ver mais</a>
+                    </div>
+                    <div class="projeto-card">
+                        <img src="assets/sistemaHospedagem.webp" alt="Sistema de hospedagem">
+                        <h3>Sistema de hospedagem</h3>
+                        <p>Um programa para um hotel com um sistema de hospedagem, usando C# e .NET.</p>
+                        <a href="https://github.com/SamuelCMDev/trilha-net-explorando-desafio.git" class="btn">Ver mais</a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="certific" class="certific-section">
-        <div class="container">
-            <h2 id="certific">Certificações</h2>
-            <h4>Algumas das certificações que possuo:</h4>
-            <div class="certific-grid">
-                <div class="certific-card">
-                    <img src="assets/formaçãohtml.png" alt="Certificação em HTML" style="max-width: 100%; height: auto;">
-                </div>
-                <div class="certific-card">
-                    <img src="assets/python.png" alt="Certificação em Python" style="max-width: 100%; height: auto;">
-                </div>
-                <div class="certific-card">
-                    <img src="assets/gitegithubcert.png" alt="Certificação em Git e GitHub" style="max-width: 100%; height: auto;">
-                </div>
-                <div class="certific-card">
-                    <img src="assets/site.png" alt="Certificação em Desenvolvimento de Sites" style="max-width: 100%; height: auto;">
-                </div>
-                <div class="certific-card">
-                    <img src="assets/programadorweb.png" alt="Certificação em Programação Web" style="max-width: 100%; height: auto;">
+        <section id="tecnologia" class="tecnologia-section">
+            <div class="container">
+                <h2>Tecnologias</h2>
+                <div class="tecnologia-grid">
+                    <div class="tecnologia-card">
+                        <i class="fab fa-python"></i>
+                        <h3>Python</h3>
+                    </div>
+                    <div class="tecnologia-card">
+                        <i class="fab fa-html5"></i>
+                        <h3>HTML</h3>
+                    </div>
+                    <div class="tecnologia-card">
+                        <i class="fab fa-css3-alt"></i>
+                        <h3>CSS</h3>
+                    </div>
+                    <div class="tecnologia-card">
+                        <i class="fab fa-github"></i>
+                        <h3>Git & GitHub</h3>
+                    </div>
+                    <div class="tecnologia-card">
+                        <i class="fas fa-robot"></i>
+                        <h3>OpenCV</h3>
+                    </div>
+                    <div class="tecnologia-card">
+                        <i class="fas fa-brain"></i>
+                        <h3>YOLOv8</h3>
+                    </div>
+                    <div class="tecnologia-card">
+                        <i class="fab fa-microsoft"></i>
+                        <h3>C#</h3>
+                    </div>
+                    <div class="tecnologia-card">
+                        <i class="fab fa-js"></i>
+                        <h3>JavaScript</h3>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="contato" class="contato-section">
-        <div class="container">
-            <h2>Contatos</h2>
-            <p>Email: <a href="mailto:costa124402p@gmail.com">costa124402p@gmail.com</a></p>
-            <p>GitHub: <a href="https://github.com/SamuelCMDev">github.com/SamuelCMDev</a></p>
-        </div>
-    </section>
+        <section id="certific" class="certific-section">
+            <div class="container">
+                <h2>Certificações</h2>
+                <div class="certific-grid">
+                    <div class="certific-card">
+                        <img src="assets/formaçãohtml.png" alt="Certificação em HTML">
+                    </div>
+                    <div class="certific-card">
+                        <img src="assets/python.png" alt="Certificação em Python">
+                    </div>
+                    <div class="certific-card">
+                        <img src="assets/gitegithubcert.png" alt="Certificação em Git e GitHub">
+                    </div>
+                    <div class="certific-card">
+                        <img src="assets/site.png" alt="Certificação em Desenvolvimento de Sites">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class="contato-section">
+            <div class="container">
+                <h2>Contato</h2>
+                <p>Email: <a href="mailto:costa124402p@gmail.com">costa124402p@gmail.com</a></p>
+                <p>GitHub: <a href="https://github.com/SamuelCMDev">github.com/SamuelCMDev</a></p>
+                <div class="social-links">
+                    <a href="https://github.com/SamuelCMDev" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="mailto:costa124402p@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <footer class="footer">
         <div class="container">
@@ -141,5 +148,8 @@
         </div>
     </footer>
 
+    <button id="btn-topo" title="Voltar ao topo"><i class="fas fa-arrow-up"></i></button>
+
+    <script src="script.js"></script>
 </body>
 </html>
